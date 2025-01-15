@@ -397,16 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Visual Studio
-.vs/
-*.user
-*.suo
-*.VC.db
-
-# Build output
-bin/
-obj/
-
-# Others
-*.vsidx
-*.vscode/
+#Models
+**/SpleeterModel/pretrained_models/
