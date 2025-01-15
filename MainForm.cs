@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace AudioDecoder
@@ -17,12 +10,13 @@ namespace AudioDecoder
         {
             InitializeComponent();
         }
-        private string filePath { get; set; }
-        private byte[] fileContent { get; set; }
+        private static string filePath { get; set; }
+        private static string folderPath { get; set; }
         private void selectAudioBtn_Click(object sender, EventArgs e)
         {
             var openFileDialog = new OpenFileDialog
             {
+                
                 Filter = "(*.mp3)|*.mp3"
             };
             openFileDialog.InitialDirectory = "c:\\";
@@ -31,13 +25,37 @@ namespace AudioDecoder
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 filePath = openFileDialog.FileName;
-
             }
+        }
+
+        private string arguments = $"-i \"{filePath}\" -o \"{folderPath}\"";
+
+        private void PythonScript()
+        {
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = "python",
+                Arguments = arguments,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = false
+            };
         }
 
         private void downloadTracksBtn_Click(object sender, EventArgs e)
         {
+            using (FolderBrowserDialog folderDialog = new FolderBrowserDialog())
+            {
+                folderDialog.Description = "Выберите папку";
 
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
+                    folderPath = folderDialog.SelectedPath;
+                }
+            }
+
+            PythonScript();
         }
     }
 }

@@ -75,12 +75,91 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SpleeterModel\pretrained_models\5stems\model.meta" />
+    <None Include="SpleeterModel\spleeter\.flake8" />
+    <None Include="SpleeterModel\spleeter\.github\CODEOWNERS" />
+    <None Include="SpleeterModel\spleeter\.github\CONTRIBUTING.md" />
+    <None Include="SpleeterModel\spleeter\.github\ISSUE_TEMPLATE\bug.md" />
+    <None Include="SpleeterModel\spleeter\.github\ISSUE_TEMPLATE\config.yml" />
+    <None Include="SpleeterModel\spleeter\.github\ISSUE_TEMPLATE\discussion.md" />
+    <None Include="SpleeterModel\spleeter\.github\ISSUE_TEMPLATE\feature.md" />
+    <None Include="SpleeterModel\spleeter\.github\PULL_REQUEST_TEMPLATE.md" />
+    <None Include="SpleeterModel\spleeter\.github\workflows\conda.yml" />
+    <None Include="SpleeterModel\spleeter\.github\workflows\docker.yml" />
+    <None Include="SpleeterModel\spleeter\.github\workflows\pypi.yml" />
+    <None Include="SpleeterModel\spleeter\.github\workflows\test.yml" />
+    <None Include="SpleeterModel\spleeter\CHANGELOG.md" />
+    <None Include="SpleeterModel\spleeter\conda\spleeter\meta.yaml" />
+    <None Include="SpleeterModel\spleeter\configs\2stems\base_config.json" />
+    <None Include="SpleeterModel\spleeter\configs\4stems\base_config.json" />
+    <None Include="SpleeterModel\spleeter\configs\5stems\base_config.json" />
+    <None Include="SpleeterModel\spleeter\configs\musdb_config.json" />
+    <None Include="SpleeterModel\spleeter\configs\musdb_train.csv" />
+    <None Include="SpleeterModel\spleeter\configs\musdb_validation.csv" />
+    <None Include="SpleeterModel\spleeter\docker\conda-entrypoint.sh" />
+    <None Include="SpleeterModel\spleeter\docker\conda.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\cuda-10-0.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\cuda-10-1.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\cuda-9.2.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\spleeter-conda.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\spleeter-model.dockerfile" />
+    <None Include="SpleeterModel\spleeter\docker\spleeter.dockerfile" />
+    <None Include="SpleeterModel\spleeter\LICENSE" />
+    <None Include="SpleeterModel\spleeter\paper.bib" />
+    <None Include="SpleeterModel\spleeter\paper.md" />
+    <None Include="SpleeterModel\spleeter\poetry.lock" />
+    <None Include="SpleeterModel\spleeter\pyproject.toml" />
+    <None Include="SpleeterModel\spleeter\README.md" />
+    <None Include="SpleeterModel\spleeter\spleeter.ipynb" />
+    <None Include="SpleeterModel\spleeter\spleeter\py.typed" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\2stems-16kHz.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\2stems.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\4stems-16kHz.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\4stems.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\5stems-16kHz.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\5stems.json" />
+    <None Include="SpleeterModel\spleeter\spleeter\resources\musdb.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore.txt" />
+    <Content Include=".gitignore" />
+    <Content Include="NN_model\decoder.py" />
+    <Content Include="SpleeterModel\spleeter\.gitignore" />
+    <Content Include="SpleeterModel\spleeter\audio_example.mp3" />
+    <Content Include="SpleeterModel\spleeter\audio_example_mono.mp3" />
+    <Content Include="SpleeterModel\spleeter\images\spleeter_logo.png" />
+    <Content Include="SpleeterModel\spleeter\spleeter\audio\adapter.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\audio\convertor.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\audio\ffmpeg.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\audio\spectrogram.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\audio\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\dataset.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\functions\blstm.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\functions\unet.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\functions\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\provider\github.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\provider\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\model\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\options.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\resources\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\separator.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\types.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\utils\configuration.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\utils\logging.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\utils\tensor.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\utils\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\__init__.py" />
+    <Content Include="SpleeterModel\spleeter\spleeter\__main__.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_command.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_eval.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_ffmpeg_adapter.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_github_model_provider.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_separator.py" />
+    <Content Include="SpleeterModel\spleeter\tests\test_train.py" />
+    <Content Include="SpleeterModel\spleeter\tests\__init__.py" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
